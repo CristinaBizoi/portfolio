@@ -1,23 +1,34 @@
 html {
     scroll-behavior: smooth;
 }
+html, body, *{
+    font-family: 'Roboto', sans-serif;
+}
 li{
     list-style:none;
+}
+h1{
+    font-weight: 700;
 }
 h2, h4, .big-icon{
     color: #373455;
 }
-.nav-link:hover , .nav-link:hover i, .btn:hover , .navbar-brand:hover{
+.navbar-brand, .font-custom{
+    font-weight: 500;
+}
+.nav-link:hover , .active-section ,  .nav-link:hover i, .btn:hover , .navbar-brand:hover{
     color:#fff;
+}
+.active-section{
+    color:#fff !important;
 }
 #sketch-holder{
     width: 100%;
     height: 100%;
-    z-index: 1;
     position: absolute;
 }
 
-.nav-link::after{
+.nav-link::after, .active-section::after{
     content:"";
     display: block;
     width: 100%;
@@ -25,7 +36,7 @@ h2, h4, .big-icon{
     background-color: transparent;
     margin-top: 5px;
 }
-.nav-link:hover:after{
+.nav-link:hover:after, .active-section::after{
     background-color: #ffff;
 }
 .navbar {
@@ -56,6 +67,17 @@ h2, h4, .big-icon{
 #section-home{
     height: 100vh;
     padding-top: 50px;
+}
+.section-home-inner{
+    max-width: 700px;
+    width: 100%;
+    z-index: 1;
+}
+#sketch-holder{
+    max-width: 100%;
+}
+.sketch{
+    max-width: 100% !important;
 }
 .gradient-color, .navbar-brand:hover{
     background-image: -webkit-gradient(linear-gradient(to bottom, #5beaa7 0%, #00cd9f 29%, #007280 100%) );
@@ -147,10 +169,6 @@ h2, h4, .big-icon{
 .skills li{
     margin: 20px 0;
 }
-.skilss{
-    display:table;
-}
-
 .skills span{
     display: inline-block;
 }
@@ -238,6 +256,14 @@ input[type="text"]:invalid, input[type="email"]:invalid, textarea:index{
     height: 70px;
     background-color: #121219;
     width: 100%;
+}
+.btn-footer{
+    color: #ffff;
+    background: #00cd9f;
+    background: -webkit-linear-gradient(top, #00cd9f 0%, #00bfb4 100%);
+    top: -18px;
+    position: relative;
+    border-radius: 0;
 }
 @media (max-width: 576px) { 
     .section-contact{

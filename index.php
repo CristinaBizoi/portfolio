@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./public/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="">
     <title>Portofolio</title>
 </head>
 <body>
@@ -25,16 +26,16 @@
                             <a class="nav-link gradient-color " href="#section-projects">Projects <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1" href="#section-home">About me</a>
+                            <a class="nav-link  gradient-color pb-1 active-section" href="#section-home">About me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  gradient-color pb-1" href="#section-contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1" href="#"><i class="fas fa-arrow-circle-down gradient-color"></i> CV</a>
+                            <a class="nav-link  gradient-color pb-1 font-custom" href="#"><i class="fas fa-arrow-circle-down gradient-color"></i> CV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1" href="#"><i class="fab fa-github gradient-color"></i> GitHub</a>
+                            <a class="nav-link  gradient-color pb-1 font-custom" href="#"><i class="fab fa-github gradient-color"></i> GitHub</a>
                         </li>
 
                     </ul>
@@ -44,9 +45,8 @@
 
     </header>
     <section id="section-home">
-        <div id="sketch-holder"> </div>
         <div class="container d-flex align-items-center h-100 ">
-            <div class="section-home-inner col-12 col-md-8 mx-auto d-flex flex-column">
+            <div class="section-home-inner mx-auto d-flex flex-column">
                 <div class="row">
                     <div class="text-section-home text-center text-md-left">
                         <h1 class="color-heading pb-4"> Hello Wold! </h1>
@@ -211,7 +211,8 @@
             </div>
         </div>
     </section>
-    <footer id="section-footer">
+    <footer id="section-footer" class="text-center">
+        <a href="#section-home" class="btn btn-footer " ><i class="fas fa-angle-double-up"></i></a>
         <div class="container">
         </div>
     </footer>
@@ -219,154 +220,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./public/js/sketch.js"></script>
+    
     <script>
-        // function setup(){
-        //     var canvas = createCanvas(100, 100);
-        //     canvas.parent('sketch-holder');
-        //     background(255, 0, 255);
-        // }
-    </script>
-        <script>
         
-        // ----------------------------------------
-        // Particle
-        // ----------------------------------------
-
-        function Particle( x, y, radius ) {
-            this.init( x, y, radius );
-        }
-
-        Particle.prototype = {
-
-            init: function( x, y, radius ) {
-
-                this.alive = true;
-
-                this.radius = radius || 10;
-                this.wander = 0.15;
-                this.theta = random( TWO_PI );
-                this.drag = 0.92;
-                this.color = '#fff';
-
-                this.x = x || 0.0;
-                this.y = y || 0.0;
-
-                this.vx = 0.0;
-                this.vy = 0.0;
-            },
-
-            move: function() {
-
-                this.x += this.vx;
-                this.y += this.vy;
-
-                this.vx *= this.drag;
-                this.vy *= this.drag;
-
-                this.theta += random( -0.5, 0.5 ) * this.wander;
-                this.vx += sin( this.theta ) * 0.1;
-                this.vy += cos( this.theta ) * 0.1;
-
-                this.radius *= 0.96;
-                this.alive = this.radius > 0.5;
-            },
-
-            draw: function( ctx ) {
-
-                ctx.beginPath();
-                ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-        };
-
-        // ----------------------------------------
-        // Example
-        // ----------------------------------------
-
-        var MAX_PARTICLES = 280;
-        var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
-
-        var particles = [];
-        var pool = [];
-
-        var demo = Sketch.create({
-            container: document.getElementById( 'sketch-holder' ),
-            retina: 'auto'
-        });
-
-        demo.setup = function() {
-
-            // Set off some initial particles.
-            var i, x, y;
-
-            for ( i = 0; i < 20; i++ ) {
-                x = ( demo.width * 0.5 ) + random( -100, 100 );
-                y = ( demo.height * 0.5 ) + random( -100, 100 );
-                demo.spawn( x, y );
-            }
-        };
-
-        demo.spawn = function( x, y ) {
+        var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
+        
+        $(window).on('scroll', function () {
+            var cur_pos = $(this).scrollTop();
+        
+            sections.each(function() {
+                var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
             
-            var particle, theta, force;
-
-            if ( particles.length >= MAX_PARTICLES )
-                pool.push( particles.shift() );
-
-            particle = pool.length ? pool.pop() : new Particle();
-            particle.init( x, y, random( 5, 40 ) );
-
-            particle.wander = random( 0.5, 2.0 );
-            particle.color = random( COLOURS );
-            particle.drag = random( 0.9, 0.99 );
-
-            theta = random( TWO_PI );
-            force = random( 2, 8 );
-
-            particle.vx = sin( theta ) * force;
-            particle.vy = cos( theta ) * force;
-
-            particles.push( particle );
-        };
-
-        demo.update = function() {
-
-            var i, particle;
-
-            for ( i = particles.length - 1; i >= 0; i-- ) {
-
-                particle = particles[i];
-
-                if ( particle.alive ) particle.move();
-                else pool.push( particles.splice( i, 1 )[0] );
-            }
-        };
-
-        demo.draw = function() {
-
-            demo.globalCompositeOperation  = 'lighter';
-
-            for ( var i = particles.length - 1; i >= 0; i-- ) {
-                particles[i].draw( demo );
-            }
-        };
-
-        demo.mousemove = function() {
-
-            var particle, theta, force, touch, max, i, j, n;
-
-            for ( i = 0, n = demo.touches.length; i < n; i++ ) {
-
-                touch = demo.touches[i], max = random( 1, 4 );
-                for ( j = 0; j < max; j++ ) {
-                  demo.spawn( touch.x, touch.y );
+                if (cur_pos >= top && cur_pos <= bottom) {
+                nav.find('a').removeClass('active-section');
+                nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active-section');
                 }
-
-            }
-        };
-        
-        </script>
+            });
+        });
+</script>
 </body>
 </html>
