@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="">
-    <title>Portofolio</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png">
+    <title>Cristina Bizoi | Portfolio</title>
 </head>
 <body>
     <header id="header-section">
@@ -23,16 +23,19 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
+                            <a class="nav-link  gradient-color pb-1 active-section" href="#section-home">About me</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link gradient-color " href="#section-projects">Projects <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1 active-section" href="#section-home">About me</a>
+                            <a class="nav-link gradient-color " href="#section-languages">Skills <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  gradient-color pb-1" href="#section-contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1 font-custom" href="#"><i class="fas fa-arrow-circle-down gradient-color"></i> CV</a>
+                            <a class="nav-link  gradient-color pb-1 font-custom" href="./public/docs/CristinaBizoi.pdf" target="_blank"><i class="fas fa-arrow-circle-down gradient-color"></i> CV</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  gradient-color pb-1 font-custom" href="#"><i class="fab fa-github gradient-color"></i> GitHub</a>
@@ -50,7 +53,7 @@
                 <div class="row">
                     <div class="text-section-home text-center text-md-left">
                         <h1 class="color-heading pb-4"> Hello Wold! </h1>
-                        <p class="color-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin urna vel mi euismod, ut pulvinar ligula eleifend. Nulla condimentum augue non libero convallis, eu euismod enim dictum. Praesent maximus faucibus facilisis. Donec non feugiat nisi, id pretium quam. Curabitur massa orci, lobortis eu gravida vitae, aliquam fringilla ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac massa a purus ullamcorper ullamcorper. Etiam condimentum congue justo ornare interdum. Phasellus id lorem lacus. Sed laoreet, sapien suscipit accumsan dapibus, metus felis tristique neque, a lacinia ex libero nec ipsum. Fusce posuere, erat quis volutpat feugiat, sapien ipsum luctus est, quis ornare mauris enim in sem. Aenean varius sodales ex, id finibus dui vehicula at. Vivamus nisl eros, ultrices ut ullamcorper nec, gravida vitae arcu.  </p>
+                        <p class="color-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin urna vel mi euismod, ut pulvinar ligula eleifend. Nulla condimentum augue non libero convallis, eu euismod enim dictum. Praesent maximus faucibus facilisis. Donec non feugiat nisi, id pretium quam. Curabitur massa orci, lobortis eu gravida vitae, aliquam fringilla ex.  </p>
                     </div>
                 </div>
                 <div class="row">
@@ -65,7 +68,71 @@
             <div class="row">
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
                     <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
+                        <img src="./public/images/quizgame.png" class="img-fluid img-project ">
+                    </div>
+                    <h4 class="text-center mt-3">QuizGame</h4>
+                    <div class="row justify-content-center py-2">
+                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
+                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 py-4 ">
+                    <div class="img-container">
+                        <img src="./public/images/blog.png" class="img-fluid img-project ">
+                    </div>
+                    <h4 class="text-center mt-3">Blog</h4>
+                    <div class="row justify-content-center py-2">
+                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
+                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 py-4 ">
+                    <div class="img-container">
+                        <img src="./public/images/dep.png" class="img-fluid img-project ">
+                    </div>
+                    <h4 class="text-center mt-3">Dosarul pacientului</h4>
+                    <div class="row justify-content-center py-2">
+                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
+                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 py-4 ">
+                    <div class="img-container">
+                        <img src="./public/images/todo.jpg" class="img-fluid img-project ">
+                    </div>
+                    <h4 class="text-center mt-3">Todo</h4>
+                    <div class="row justify-content-center py-2">
+                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
+                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 py-4 ">
+                    <div class="img-container">
+                        <img src="./public/images/dronezone.png" class="img-fluid img-project ">
                     </div>
                     <h4 class="text-center mt-3">Dronezone</h4>
                     <div class="row justify-content-center py-2">
@@ -81,73 +148,9 @@
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
                     <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
+                        <img src="./public/images/tanatos.png" class="img-fluid img-project ">
                     </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
-                    <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
-                    <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
-                    </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
-                    <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
-                    <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
-                    </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
-                    <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
-                    <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
-                    </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
-                    <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
-                    <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/default.jpg" class="img-fluid img-project ">
-                    </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
+                    <h4 class="text-center mt-3">Tanatos</h4>
                     <div class="row justify-content-center py-2">
                         <span class="rounded-pill btn-tag btn-laravel">laravel</span>
                         <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
@@ -162,7 +165,7 @@
             </div>
         </div>
     </section>
-    <section id="section-languages" class="py-5">
+    <section id="section-languages">
         <div class="container">
             <h2 class="text-center"> Languages used </h2>
             <div class="skills">
@@ -171,7 +174,8 @@
                 <li class="col-12"> <span class="col-2 text-right"> <i class="fab fa-js big-icon"></i> </span> <span class="bar col-8"><span class="js"></span></span> </li>
                 <li class="col-12"> <span class="col-2 text-right"> <i class="fab fa-html5 big-icon"></i> </span> <span class="bar col-8"><span class="html5"></span></span> </li>
                 <li class="col-12"> <span class="col-2 text-right"> <i class="fab fa-css3-alt big-icon"></i></span> <span class="bar col-8"><span class="css"></span></span> </li>
-                </div >
+                <li class="col-12"> <span class="col-2"> <img src="./public/images/mysql.png" class="image-language float-right"> </span> <span class="bar col-8"><span class="mysql"></span></span> </li>    
+            </div >
             </div>
 
             <h2 class="text-center py-4"> Frameworks </h2>
@@ -214,6 +218,7 @@
     <footer id="section-footer" class="text-center">
         <a href="#section-home" class="btn btn-footer " ><i class="fas fa-angle-double-up"></i></a>
         <div class="container">
+            Cristina Bizoi ©2019
         </div>
     </footer>
      <!-- Bootstrap core JavaScript -->
@@ -238,6 +243,14 @@
                 }
             });
         });
+</script>
+<script src="./public/js/progress-bar.js"></script>
+<script>
+    animateProressBar($('.php'));
+    animateProressBar($('.js'));
+    animateProressBar($('.html5'));
+    animateProressBar($('.css'));
+    animateProressBar($('.mysql'));
 </script>
 </body>
 </html>

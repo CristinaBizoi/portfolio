@@ -61,17 +61,20 @@ h2, h4, .big-icon{
     border-width: 3px;
     border-style: solid;
 }
-#section-home, #header-section, .navbar{
+#header-section, .navbar{
     background-color:rgb(27, 26, 37);
 }
 #section-home{
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 50px; 
+    background: linear-gradient(rgb(27, 26, 37), rgba(27, 26, 37, 0.97), rgba(27, 26, 37, 0.81)) , url('../images/bg.svg');
+    /* background-image: url('../images/bg.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section-home-inner{
     max-width: 700px;
     width: 100%;
-    z-index: 1;
 }
 #sketch-holder{
     max-width: 100%;
@@ -119,8 +122,8 @@ h2, h4, .big-icon{
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
-#section-projects{
-    padding: 100px 0px;
+#section-projects, #section-languages{
+    padding-top: 100px;
 }
 #section-projects p{
     color:#486668;
@@ -194,29 +197,30 @@ h2, h4, .big-icon{
 }
 .php{
     width: 60%;
-    animation: progress 2s;
 }
 .js{
     width: 40%;
-    animation: progress 2s;
+    
 }
 .css{
     width: 80%;
-    animation: progress 2s;
+   
 }
 .html5{
     width: 75%;
-    animation: progress 2s;
+}
+.mysql{
+    width: 50%;
+}
+.image-language{
+    max-width: 50px;
+    max-height: 34px;
 }
 .framework{
     width: 100%;
     max-width: 100px;
 }
-@keyframes progress {
-    0%{
-        width: 0%;
-    }
-}
+
 /* end progress bar style */
 
 
@@ -256,6 +260,7 @@ input[type="text"]:invalid, input[type="email"]:invalid, textarea:index{
     height: 70px;
     background-color: #121219;
     width: 100%;
+    color: #486668;
 }
 .btn-footer{
     color: #ffff;
@@ -271,5 +276,10 @@ input[type="text"]:invalid, input[type="email"]:invalid, textarea:index{
     }
     .section-contact-inner{
         width: 100%;
+    }
+}
+@media (max-width: 760px){
+    .nav-link::after, .active-section::after{
+        width: 71px;
     }
 }
