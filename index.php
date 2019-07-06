@@ -38,7 +38,7 @@
                             <a class="nav-link  gradient-color pb-1 font-custom" href="./public/docs/CristinaBizoi.pdf" target="_blank"><i class="fas fa-arrow-circle-down gradient-color"></i> CV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  gradient-color pb-1 font-custom" href="#"><i class="fab fa-github gradient-color"></i> GitHub</a>
+                            <a class="nav-link  gradient-color pb-1 font-custom" href="https://github.com/CristinaBizoi/" target="_blank"><i class="fab fa-github gradient-color"></i> GitHub</a>
                         </li>
 
                     </ul>
@@ -78,8 +78,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/quizgame" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -94,8 +94,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/blog" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -110,8 +110,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/dep" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -126,8 +126,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="http://todo.cristinabizoi.ro" target="_blank" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/todo" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -142,8 +142,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="http://dronezone.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/demo_dronezone" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -158,8 +158,8 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
-                        <a href="" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                        <a href="http://tanatos.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/demo_tanatos" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
             </div>
