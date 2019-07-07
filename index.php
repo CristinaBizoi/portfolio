@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +12,7 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="./public/css/toastr.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./public/images/logo.png">
     <title>Cristina Bizoi | Portfolio</title>
 </head>
@@ -52,7 +56,7 @@
             <div class="section-home-inner mx-auto d-flex flex-column">
                 <div class="row">
                     <div class="text-section-home text-center text-md-left">
-                        <h1 class="color-heading pb-4"> Hello Wold! </h1>
+                        <h1 class="pb-4 color-content"> Hello, I'm <span class="color-heading">Cristina Bizoi </span>.</h1>
                         <p class="color-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin urna vel mi euismod, ut pulvinar ligula eleifend. Nulla condimentum augue non libero convallis, eu euismod enim dictum. Praesent maximus faucibus facilisis. Donec non feugiat nisi, id pretium quam. Curabitur massa orci, lobortis eu gravida vitae, aliquam fringilla ex.  </p>
                     </div>
                 </div>
@@ -67,8 +71,8 @@
             <h2 class="text-center"> Projects </h2>
             <div class="row">
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/quizgame.png" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/quizgame.png" class="img-fluid img-project mx-auto ">
                     </div>
                     <h4 class="text-center mt-3">QuizGame</h4>
                     <div class="row justify-content-center py-2">
@@ -83,8 +87,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/blog.png" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/blog.png" class="img-fluid img-project mx-auto">
                     </div>
                     <h4 class="text-center mt-3">Blog</h4>
                     <div class="row justify-content-center py-2">
@@ -99,8 +103,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/dep.png" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/dep.png" class="img-fluid img-project mx-auto">
                     </div>
                     <h4 class="text-center mt-3">Dosarul pacientului</h4>
                     <div class="row justify-content-center py-2">
@@ -115,8 +119,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/todo.jpg" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/todo.jpg" class="img-fluid img-project mx-auto ">
                     </div>
                     <h4 class="text-center mt-3">Todo</h4>
                     <div class="row justify-content-center py-2">
@@ -131,8 +135,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/dronezone.png" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/dronezone.png" class="img-fluid img-project mx-auto">
                     </div>
                     <h4 class="text-center mt-3">Dronezone</h4>
                     <div class="row justify-content-center py-2">
@@ -147,8 +151,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container">
-                        <img src="./public/images/tanatos.png" class="img-fluid img-project ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/tanatos.png" class="img-fluid img-project mx-auto ">
                     </div>
                     <h4 class="text-center mt-3">Tanatos</h4>
                     <div class="row justify-content-center py-2">
@@ -196,7 +200,7 @@
         <div class="container">
             <div class="section-contact-inner mx-auto">
                 <h2 class="text-center pb-5 pt-0 pt-sm-4 color-heading"> Contact me </h2>
-                <form>
+                <form method="POST" action="./send_mail.php">
                     <div class="form-row">
                         <div class="col-md-6 col-12 mb-3 pr-sm-0 pr-md-4">
                             <input type="text" class="form-control" id="name" placeholder="Name" name="name" autocomplete="off" required>
@@ -222,10 +226,13 @@
         </div>
     </footer>
      <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="./public/js/toastr.min.js"></script>
     <script>
         
         var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
@@ -252,5 +259,17 @@
     animateProressBar($('.css'));
     animateProressBar($('.mysql'));
 </script>
+<?php
+    if(isset($_SESSION["message"]) && $_SESSION["message"] == true){
+?>
+<script>
+    $(document).ready( function(){
+        toastr.success('Sent!', '');
+    });
+</script>
+<?php
+    $_SESSION["message"]= false;
+}
+?>
 </body>
 </html>

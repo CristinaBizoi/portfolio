@@ -7,6 +7,10 @@ html, body, *{
 li{
     list-style:none;
 }
+.btn:focus, #btn-nav:focus{
+    box-shadow: 0 0 5px #04d8bd;
+    outline: none;
+}
 h1{
     font-weight: 700;
 }
