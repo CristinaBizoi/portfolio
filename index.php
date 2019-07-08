@@ -82,7 +82,7 @@ session_start();
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
                     <div class="row justify-content-center">
-                        <a href="" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
+                        <a href="http://quizgame.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/quizgame" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>

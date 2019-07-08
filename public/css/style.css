@@ -156,6 +156,9 @@ h2, h4, .big-icon{
     background-color: #373455;
     border: 1px solid #373455;
 }
+.btn-project:focus{
+    box-shadow: 0 0 5px #373455;
+}
 .btn-tag{
     padding: 3px 7px;
     color:#fff;
@@ -219,6 +222,7 @@ h2, h4, .big-icon{
 .image-language{
     max-width: 50px;
     max-height: 34px;
+
 }
 .framework{
     width: 100%;
