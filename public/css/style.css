@@ -168,6 +168,15 @@ h2, h4, .big-icon{
 .btn-laravel{
     background-color: #37C97B;
 }
+.btn-html{
+    background-color: #e34f26;
+}
+.btn-psdhtml{
+    background-color: #e4002b;
+}
+.btn-php{
+    background-color: #4F5D95;;
+}
 .btn-bootstrap{
     background-color: #0A4DD5;
 }

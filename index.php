@@ -56,8 +56,9 @@ session_start();
             <div class="section-home-inner mx-auto d-flex flex-column">
                 <div class="row">
                     <div class="text-section-home text-center text-md-left">
-                        <h1 class="pb-4 color-content"> Hello, I'm <span class="color-heading">Cristina Bizoi </span>.</h1>
-                        <p class="color-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin urna vel mi euismod, ut pulvinar ligula eleifend. Nulla condimentum augue non libero convallis, eu euismod enim dictum. Praesent maximus faucibus facilisis. Donec non feugiat nisi, id pretium quam. Curabitur massa orci, lobortis eu gravida vitae, aliquam fringilla ex.  </p>
+                        <h1 class="pb-4 color-content"> Hello, I'm <span class="color-heading">Cristina Bizoi</span>.</h1>
+                        <p class="color-content"> I'm a fullstack web developer from Bucharest, student at Politehnica University of Bucharest pursuing a master's degree in Medical Informatic Systems. I like building responsive and scalable web applications. </p>
+                        <p class="color-content"> Feel free to take a look at my projects </p>
                     </div>
                 </div>
                 <div class="row">
@@ -80,7 +81,7 @@ session_start();
                         <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
                         <span class="rounded-pill btn-tag btn-jquery">jquery</span>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <p class="text-center"> My latest project is a Laravel aplication for a quiz game type website. </p>
                     <div class="row justify-content-center">
                         <a href="http://quizgame.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/quizgame" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
@@ -92,11 +93,11 @@ session_start();
                     </div>
                     <h4 class="text-center mt-3">Blog</h4>
                     <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-php">php</span>
                         <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
                         <span class="rounded-pill btn-tag btn-jquery">jquery</span>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <p class="text-center">Clean minimalist blog website using PHP and Boostrap.</p>
                     <div class="row justify-content-center">
                         <a href="http://blog.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/blog" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
@@ -108,11 +109,11 @@ session_start();
                     </div>
                     <h4 class="text-center mt-3">Dosarul pacientului</h4>
                     <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-php">php</span>
                         <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
                         <span class="rounded-pill btn-tag btn-jquery">jquery</span>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <p class="text-center">Online platform for managing pacient's electronic health records.</p>
                     <div class="row justify-content-center">
                         <a href="http://dep.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/dep" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
@@ -124,30 +125,13 @@ session_start();
                     </div>
                     <h4 class="text-center mt-3">Todo</h4>
                     <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
+                        <span class="rounded-pill btn-tag btn-php">php</span>
                         <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <p class="text-center">Simple PHP app for managing tasks, my first application using PHP and MySQL.</p>
                     <div class="row justify-content-center">
                         <a href="http://todo.cristinabizoi.ro" target="_blank" class="btn btn-project mr-2"><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/todo" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-sm-6 py-4 ">
-                    <div class="img-container d-flex">
-                        <img src="./public/images/dronezone.png" class="img-fluid img-project mx-auto">
-                    </div>
-                    <h4 class="text-center mt-3">Dronezone</h4>
-                    <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
-                        <span class="rounded-pill btn-tag btn-jquery">jquery</span>
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
-                    <div class="row justify-content-center">
-                        <a href="http://dronezone.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
-                        <a href="https://github.com/CristinaBizoi/demo_dronezone" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-6 py-4 ">
@@ -156,14 +140,31 @@ session_start();
                     </div>
                     <h4 class="text-center mt-3">Tanatos</h4>
                     <div class="row justify-content-center py-2">
-                        <span class="rounded-pill btn-tag btn-laravel">laravel</span>
-                        <span class="rounded-pill btn-tag btn-bootstrap">bootstrap</span>
+                        <span class="rounded-pill btn-tag btn-html">html</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">css</span>
                         <span class="rounded-pill btn-tag btn-jquery">jquery</span>
+                        <span class="rounded-pill btn-tag btn-psdhtml">psd2html</span>
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec accumsan mauris. Etiam diam nibh, facilisis eget urna sit amet, gravida tristique erat.</p>
+                    <p class="text-center"> Responsive website using HTML, CSS with jQuery menu and carousel.</p>
                     <div class="row justify-content-center">
                         <a href="http://tanatos.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank"><i class="fas fa-eye "></i> Demo</a>
                         <a href="https://github.com/CristinaBizoi/demo_tanatos" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 py-4 ">
+                    <div class="img-container d-flex">
+                        <img src="./public/images/dronezone.png" class="img-fluid img-project mx-auto">
+                    </div>
+                    <h4 class="text-center mt-3">Dronezone</h4>
+                    <div class="row justify-content-center py-2">
+                        <span class="rounded-pill btn-tag btn-html">html</span>
+                        <span class="rounded-pill btn-tag btn-bootstrap">css</span>
+                        <span class="rounded-pill btn-tag btn-psdhtml">psd2html</span>
+                    </div>
+                    <p class="text-center">Responsive website, PSD to HTML, also my first project using HTML and CSS.</p>
+                    <div class="row justify-content-center">
+                        <a href="http://dronezone.cristinabizoi.ro" class="btn btn-project mr-2" target="_blank" ><i class="fas fa-eye "></i> Demo</a>
+                        <a href="https://github.com/CristinaBizoi/demo_dronezone" target="_blank" class="btn btn-project"><i class="fab fa-github"></i> Source</a>
                     </div>
                 </div>
             </div>
